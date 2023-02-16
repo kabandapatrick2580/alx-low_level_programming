@@ -1,10 +1,10 @@
 #include<stdio.h>
 /**
- * main stuf and stuff
- * we will return too
+ * main - A program that prints a line with put function
+ * Return: 0 (Great)
  */
-int main()
+int main(void)
 {
 puts("\"Programming is like building a multilingual puzzle");
-return(0);
+return (0);
 }
