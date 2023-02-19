@@ -1,7 +1,10 @@
 #include <stdio.h>
 /**
 * main - Entry point
-* return: 0 ALways (success)
+*
+* Description: This funtion prints thr alphabet in lowecase and uppercase
+*
+* Return: 0 ALways (Success)
 */
 
 int main(void)
