@@ -1,24 +1,29 @@
-#include <stdlib.h>
-#include <string.h>
-#include <libgen.h>
-
+#include <stdlib>
 /**
- * main - Entry level codes
+ * main - Entry point of the program
  *
- * Return: 0
+ * Return: always 0
  */
-
 int main(void)
 {
-	char *file_name = strdup(__FILE__);
-	char *base_name = basename(file_name);
+	char *filename = __FILE__;
+	char *name;
+	int i;
 
-	size_t output_size = strlen(base_name) + 2;
-	char *output = malloc(output_size);
+	for (i = 0; filename[i]; i++)
+	{
+		if (filename[i] == '/')
+		{
+			name = &filename[i + 1];
+		}
+	}
 
-	snprintf(output, output_size, "%s\n", base_name);
-	write(1, output, output_size - 1);
-	free(output);
-	free(file_name);
-	exit(0);
+	while (*name)
+	{
+		_putchar(*name);
+		name++;
+	}
+	_putchar('\n');
+
+	exit(EXIT_SUCCESS);
 }
