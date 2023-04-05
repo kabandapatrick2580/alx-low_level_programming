@@ -6,14 +6,14 @@
  *
  * Return: number of elements
  */
-size_t listint_len(const listint_int *h)
+size_t listint_len(const listint_t *h)
 {
 	size_t node_counter = 0;
 
 	while (h != NULL)
 	{
 		h = h->next;
-		node_counter++
+		node_counter++;
 	}
 	return (node_counter);
 }
