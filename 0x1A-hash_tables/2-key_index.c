@@ -1,5 +1,5 @@
 #include "hash_tables.h"
-
+#include "hash_tablesnew.h"
 /**
  * key_index - Computes the index for a given key in a hash table array.
  * @key: The key for which to calculate the index.
