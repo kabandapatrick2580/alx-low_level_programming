@@ -4,14 +4,14 @@
 
 
 /**
- * my_binary_search - Search for a value in a sorted array using Binary Search.
+ * own_binary_search - Search for a value in a sorted array using Binary Search
  * @array: Pointer to the first element of the array to search in.
  * @size: Number of elements in the array.
  * @value: The value to search for.
  *
  * Return: Index where 'value' is located, or -1 if not found.
  */
-int my_binary_search(int *array, size_t size, int value)
+int own_binary_search(int *array, size_t size, int value)
 {
 	size_t get_left = 0;
 	size_t right_put = size - 1, mid;
@@ -76,5 +76,5 @@ int exponential_search(int *array, size_t size, int value)
 	printf("Value found between indexes [%lu] and [%lu]\n", bind_t / 2, bind_t);
 
 
-	return (my_binary_search(array + (bind_t / 2), size - (bind_t / 2), value));
+	return (own_binary_search(array + (bind_t / 2), size - (bind_t / 2), value));
 }
